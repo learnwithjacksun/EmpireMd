@@ -41,7 +41,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           <div className="flex items-center gap-1">
             <button
               type="button"
-              className="h-10 w-10 center rounded-md bg-secondary lg:hidden"
+              className="h-10 w-10 flex items-center justify-center rounded-md bg-secondary lg:hidden"
               aria-label="Close sidebar"
               onClick={() => setSidebarOpen(false)}
             >
