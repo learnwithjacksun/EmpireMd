@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Geist+Pixel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import "tailwindcss";
 
@@ -25,7 +25,10 @@
 }
 
 @theme inline {
-  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Comfortaa", sans-serif;
+  --font-serif: "Dancing Script", serif;
+  --font-mono: "Geist Pixel", monospace;
+  --font-inter: "Inter", sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-secondary: var(--secondary);
@@ -55,7 +58,10 @@ body {
   @apply flex items-center justify-center;
 }
 
-button,
+button {
+  @apply cursor-pointer;
+}
+
 .btn {
   @apply cursor-pointer flex items-center justify-center gap-2 disabled:opacity-50;
 }
